@@ -1,0 +1,44 @@
+---
+section:
+  - item: 3.1.0
+    description: When converting xoos into xaads, the oos are exchanged to aads
+    notes: Note how this changes
+    location: bastion
+    command: |
+      ls -l /;
+      echo $HOME ;
+      echo $HOME | grep j ;
+  - item: 3.1.1
+    description: OOOOOHHHHH  This is different
+    notes: my notes
+    location: node
+    command: |
+      grep root /etc/group ;
+      /bin/stat /etc/group ;
+  - item: 3.1.2
+    description: Check for processes
+    notes: nothing to see here
+    location: node
+    command: |
+      ps -ef | grep kubelet ;
+      ls -l /etc/kubernetes ;
+  - item: 3.1.3
+    description: AAARG nope
+    notes: we need to see something
+    location: bastion
+    command: |
+      kubectl get nodes ;
+      kubectl get ns ;
+  - item: 3.1.4
+    description: Something to think about
+    notes: 
+    location: node
+    command: |
+      ps -ef | grep kubernetes ;
+      ps -ef | grep kubernetes | grep .json ;
+  - item: 3.1.5
+    description: Another thing
+    notes: 
+    location: node
+    command: |
+      find /etc -name config.json -print
