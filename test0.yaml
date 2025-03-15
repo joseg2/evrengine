@@ -1,0 +1,18 @@
+---
+section:
+  - item: 3.1.0
+    description: When converting xoos into xaads, the oos are exchanged to aads
+    location: bastion
+    command: |
+      ls -l /;
+      echo $HOME ;
+      echo $HOME | grep j ;
+  - item: 3.1.1
+    description: OOOOOHHHHH  This is different
+    location: node
+    command: |
+      grep root /etc/group ;
+      /bin/stat /etc/group ;
+  - item: 3.1.2
+    description: Check for processes
+    notes: Esto se hace en la consola de AWS en X > Y > Z
